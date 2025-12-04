@@ -11,7 +11,7 @@ import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 // CONFIGURATION - Replace YOUR-WEBHOOK-ID with your actual webhook ID from n8n
-const WEBHOOK_URL = 'https://hiremindv7.app.n8n.cloud/webhook/YOUR-WEBHOOK-ID';
+const WEBHOOK_URL = 'https://hiremindv8.app.n8n.cloud/webhook/ae85a421-11ef-4d2b-9153-4702bb804899/chat';
 
 interface Message {
   id: string;
