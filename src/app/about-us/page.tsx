@@ -36,7 +36,7 @@ const teamMembers = [
 },
 {
   name: "Raiyan Hussain",
-  role: "Head of AI Research",
+  role: "Social Media Manager",
   image: "DK",
   bio: "PhD in Computer Science from MIT. Published researcher in NLP and job matching algorithms. Pioneering the future of AI recruitment.",
   linkedin: "#",
@@ -130,7 +130,7 @@ export default function AboutUs() {
                       {member.image}
                     </div>
                     <h3 className="text-xl font-semibold mb-1 !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">{member.name}</h3>
-                    <p className="text-sm text-primary font-medium mb-3 !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">{member.role}</p>
+                    <p className="text-sm text-primary font-medium mb-3 !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">{member.role}</p>
                     <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                       {member.bio}
                     </p>
