@@ -22,8 +22,8 @@ export default function Dashboard() {
     return (
       <div className="flex min-h-screen items-center justify-center">
         <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin" />
-      </div>
-    );
+      </div>);
+
   }
 
   if (!session?.user) return null;
@@ -47,10 +47,10 @@ export default function Dashboard() {
           {/* Feature Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
             {/* HireMind Chat - Active */}
-            <Card 
+            <Card
               className="p-6 sm:p-8 lg:p-10 hover:border-primary/50 transition-all cursor-pointer group"
-              onClick={() => router.push("/hiremind")}
-            >
+              onClick={() => router.push("/hiremind")}>
+
               <div className="mb-4 sm:mb-6">
                 <MessageSquare className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 text-primary" />
               </div>
@@ -73,10 +73,10 @@ export default function Dashboard() {
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 Upload your resume to help AI find the best matches
               </p>
-              <Badge 
-                variant="secondary" 
-                className="absolute top-4 sm:top-6 right-4 sm:right-6 text-xs"
-              >
+              <Badge
+                variant="secondary"
+                className="absolute top-4 sm:top-6 right-4 sm:right-6 text-xs">
+
                 Coming soon
               </Badge>
             </Card>
@@ -92,10 +92,10 @@ export default function Dashboard() {
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 View insights and statistics about your job search
               </p>
-              <Badge 
-                variant="secondary" 
-                className="absolute top-4 sm:top-6 right-4 sm:right-6 text-xs"
-              >
+              <Badge
+                variant="secondary"
+                className="absolute top-4 sm:top-6 right-4 sm:right-6 text-xs">
+
                 Coming soon
               </Badge>
             </Card>
@@ -108,13 +108,13 @@ export default function Dashboard() {
               <h3 className="text-xl sm:text-2xl font-semibold mb-2 sm:mb-3 text-muted-foreground">
                 Hiremind Study
               </h3>
-              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                Access resources and guides to improve your job search
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed !whitespace-pre-line">Hiremind Study exclusively for teachers and students, connecting world-wide
+
               </p>
-              <Badge 
-                variant="secondary" 
-                className="absolute top-4 sm:top-6 right-4 sm:right-6 text-xs"
-              >
+              <Badge
+                variant="secondary"
+                className="absolute top-4 sm:top-6 right-4 sm:right-6 text-xs">
+
                 Coming soon
               </Badge>
             </Card>
@@ -130,10 +130,10 @@ export default function Dashboard() {
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 Collaborate with your team and manage shared resources
               </p>
-              <Badge 
-                variant="secondary" 
-                className="absolute top-4 sm:top-6 right-4 sm:right-6 text-xs"
-              >
+              <Badge
+                variant="secondary"
+                className="absolute top-4 sm:top-6 right-4 sm:right-6 text-xs">
+
                 Coming soon
               </Badge>
             </Card>
@@ -149,19 +149,19 @@ export default function Dashboard() {
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 Connect with other job seekers and share experiences
               </p>
-              <Badge 
-                variant="secondary" 
-                className="absolute top-4 sm:top-6 right-4 sm:right-6 text-xs"
-              >
+              <Badge
+                variant="secondary"
+                className="absolute top-4 sm:top-6 right-4 sm:right-6 text-xs">
+
                 Coming soon
               </Badge>
             </Card>
 
             {/* About Us - Active */}
-            <Card 
+            <Card
               className="p-6 sm:p-8 lg:p-10 hover:border-primary/50 transition-all cursor-pointer group"
-              onClick={() => router.push("/about-us")}
-            >
+              onClick={() => router.push("/about-us")}>
+
               <div className="mb-4 sm:mb-6">
                 <Info className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 text-primary" />
               </div>
@@ -175,6 +175,6 @@ export default function Dashboard() {
           </div>
         </div>
       </main>
-    </div>
-  );
+    </div>);
+
 }
