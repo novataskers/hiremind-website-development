@@ -11,7 +11,7 @@ import { toast } from "sonner";
 
 const teamMembers = [
 {
-  name: "Sarah Johnson",
+  name: "Faiz Nour El Houda",
   role: "CEO & Co-Founder",
   image: "SJ",
   bio: "Former VP at LinkedIn with 15+ years in recruitment tech. Passionate about leveraging AI to democratize job opportunities.",
@@ -129,7 +129,7 @@ export default function AboutUs() {
                     <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white text-2xl font-bold mb-4">
                       {member.image}
                     </div>
-                    <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
+                    <h3 className="text-xl font-semibold mb-1 !whitespace-pre-line">{member.name}</h3>
                     <p className="text-sm text-primary font-medium mb-3">{member.role}</p>
                     <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                       {member.bio}
