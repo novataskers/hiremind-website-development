@@ -102,7 +102,10 @@ export default function AboutUs() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-center">Our Story</h2>
             <div className="space-y-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
-              <p className="!whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">{`\n\n`}
+              <p className="!whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line whitespace-pre-line !whitespace-pre-line">{`
+
+ 
+`}
 
 
 
@@ -130,8 +133,7 @@ export default function AboutUs() {
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">Meet Our Team</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-              {teamMembers.map((member, index) =>
-              <Card key={index} className="p-6 hover:border-primary/50 transition-all">
+              {teamMembers.map((member, index) => <Card key={index} className="p-6 hover:border-primary/50 transition-all">
                   <div className="flex flex-col items-center text-center">
                     <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white text-2xl font-bold mb-4">
                       {member.image}
@@ -150,8 +152,7 @@ export default function AboutUs() {
                       </a>
                     </div>
                   </div>
-                </Card>
-              )}
+                </Card>)}
             </div>
           </div>
         </section>
@@ -236,13 +237,12 @@ export default function AboutUs() {
                     <label htmlFor="name" className="block text-sm font-medium mb-2">
                       Name
                     </label>
-                    <Input
-                      id="name"
-                      type="text"
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="Your name"
-                      required />
+                    <Input id="name"
+                    type="text"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    placeholder="Your name"
+                    required />
 
                   </div>
 
