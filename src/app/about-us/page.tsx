@@ -12,14 +12,14 @@ import { toast } from "sonner";
 const teamMembers = [
 {
   name: "Faiz Nour El Houda",
-  role: "CEO & Co-Founder",
+  role: "Founder",
   image: "SJ",
   bio: "Former VP at LinkedIn with 15+ years in recruitment tech. Passionate about leveraging AI to democratize job opportunities.",
   linkedin: "#",
   twitter: "#"
 },
 {
-  name: "Michael Chen",
+  name: "Jihan Ahmed",
   role: "CTO & Co-Founder",
   image: "MC",
   bio: "Ex-Google AI Engineer. Built machine learning systems for Fortune 500 companies. Believes in ethical AI for career advancement.",
@@ -130,7 +130,7 @@ export default function AboutUs() {
                       {member.image}
                     </div>
                     <h3 className="text-xl font-semibold mb-1 !whitespace-pre-line">{member.name}</h3>
-                    <p className="text-sm text-primary font-medium mb-3">{member.role}</p>
+                    <p className="text-sm text-primary font-medium mb-3 !whitespace-pre-line">{member.role}</p>
                     <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                       {member.bio}
                     </p>
