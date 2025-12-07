@@ -10,68 +10,68 @@ import { useState } from "react";
 import { toast } from "sonner";
 
 const teamMembers = [
-  {
-    name: "Sarah Johnson",
-    role: "CEO & Co-Founder",
-    image: "SJ",
-    bio: "Former VP at LinkedIn with 15+ years in recruitment tech. Passionate about leveraging AI to democratize job opportunities.",
-    linkedin: "#",
-    twitter: "#",
-  },
-  {
-    name: "Michael Chen",
-    role: "CTO & Co-Founder",
-    image: "MC",
-    bio: "Ex-Google AI Engineer. Built machine learning systems for Fortune 500 companies. Believes in ethical AI for career advancement.",
-    linkedin: "#",
-    twitter: "#",
-  },
-  {
-    name: "Emily Rodriguez",
-    role: "Head of Product",
-    image: "ER",
-    bio: "Product leader from Meta. Expert in user experience design. Dedicated to creating intuitive tools that empower job seekers.",
-    linkedin: "#",
-    twitter: "#",
-  },
-  {
-    name: "David Kim",
-    role: "Head of AI Research",
-    image: "DK",
-    bio: "PhD in Computer Science from MIT. Published researcher in NLP and job matching algorithms. Pioneering the future of AI recruitment.",
-    linkedin: "#",
-    twitter: "#",
-  },
-  {
-    name: "Amanda Foster",
-    role: "VP of Customer Success",
-    image: "AF",
-    bio: "Career coach with 10+ years helping thousands land dream jobs. Committed to ensuring every user finds their perfect match.",
-    linkedin: "#",
-    twitter: "#",
-  },
-  {
-    name: "James Martinez",
-    role: "Head of Engineering",
-    image: "JM",
-    bio: "Full-stack architect from Amazon. Built scalable systems serving millions. Focused on reliable, fast, and secure technology.",
-    linkedin: "#",
-    twitter: "#",
-  },
-];
+{
+  name: "Sarah Johnson",
+  role: "CEO & Co-Founder",
+  image: "SJ",
+  bio: "Former VP at LinkedIn with 15+ years in recruitment tech. Passionate about leveraging AI to democratize job opportunities.",
+  linkedin: "#",
+  twitter: "#"
+},
+{
+  name: "Michael Chen",
+  role: "CTO & Co-Founder",
+  image: "MC",
+  bio: "Ex-Google AI Engineer. Built machine learning systems for Fortune 500 companies. Believes in ethical AI for career advancement.",
+  linkedin: "#",
+  twitter: "#"
+},
+{
+  name: "Emily Rodriguez",
+  role: "Head of Product",
+  image: "ER",
+  bio: "Product leader from Meta. Expert in user experience design. Dedicated to creating intuitive tools that empower job seekers.",
+  linkedin: "#",
+  twitter: "#"
+},
+{
+  name: "David Kim",
+  role: "Head of AI Research",
+  image: "DK",
+  bio: "PhD in Computer Science from MIT. Published researcher in NLP and job matching algorithms. Pioneering the future of AI recruitment.",
+  linkedin: "#",
+  twitter: "#"
+},
+{
+  name: "Amanda Foster",
+  role: "VP of Customer Success",
+  image: "AF",
+  bio: "Career coach with 10+ years helping thousands land dream jobs. Committed to ensuring every user finds their perfect match.",
+  linkedin: "#",
+  twitter: "#"
+},
+{
+  name: "James Martinez",
+  role: "Head of Engineering",
+  image: "JM",
+  bio: "Full-stack architect from Amazon. Built scalable systems serving millions. Focused on reliable, fast, and secure technology.",
+  linkedin: "#",
+  twitter: "#"
+}];
+
 
 export default function AboutUs() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: "",
+    message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       toast.success("Message sent successfully! We'll get back to you soon.");
@@ -112,10 +112,10 @@ export default function AboutUs() {
                 on your behalf, finding opportunities you'd never discover, crafting personalized applications that stand out, and 
                 following up with hiring managers so you can focus on what matters: preparing for interviews and landing your dream job.
               </p>
-              <p>
-                Today, HireMind has helped over 50,000 professionals across 120 countries secure positions at top companies. Our AI 
-                has processed millions of job listings, sent hundreds of thousands of applications, and saved our users over 2 million 
-                hours of manual work. But we're just getting started.
+              <p className="!whitespace-pre-line">
+
+
+
               </p>
               <p className="font-semibold text-foreground">
                 Our mission is simple: empower every professional with an AI agent that works 24/7 to advance their career, so they 
@@ -130,8 +130,8 @@ export default function AboutUs() {
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">Meet Our Team</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-              {teamMembers.map((member, index) => (
-                <Card key={index} className="p-6 hover:border-primary/50 transition-all">
+              {teamMembers.map((member, index) =>
+              <Card key={index} className="p-6 hover:border-primary/50 transition-all">
                   <div className="flex flex-col items-center text-center">
                     <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white text-2xl font-bold mb-4">
                       {member.image}
@@ -151,7 +151,7 @@ export default function AboutUs() {
                     </div>
                   </div>
                 </Card>
-              ))}
+              )}
             </div>
           </div>
         </section>
@@ -242,8 +242,8 @@ export default function AboutUs() {
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="Your name"
-                      required
-                    />
+                      required />
+
                   </div>
 
                   <div>
@@ -256,8 +256,8 @@ export default function AboutUs() {
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="your.email@example.com"
-                      required
-                    />
+                      required />
+
                   </div>
 
                   <div>
@@ -270,8 +270,8 @@ export default function AboutUs() {
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       placeholder="How can we help you?"
                       rows={5}
-                      required
-                    />
+                      required />
+
                   </div>
 
                   <Button type="submit" className="w-full" disabled={isSubmitting}>
@@ -299,6 +299,6 @@ export default function AboutUs() {
           </div>
         </footer>
       </main>
-    </div>
-  );
+    </div>);
+
 }
