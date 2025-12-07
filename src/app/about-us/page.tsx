@@ -102,23 +102,14 @@ export default function AboutUs() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-center">Our Story</h2>
             <div className="space-y-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
-              <p className="!whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line whitespace-pre-line !whitespace-pre-line !w-[716px] !h-[89px]">{`
-
- 
-`}
-
-
-
+              <p>
+                In mid-2025, Founder Faiz Nour El Houda was searching for a better way to connect with students and grow her online teaching business. At the same time, her close friend Jihan Ahmed was struggling to find clients for his video-editing work. After sharing their challenges, Nour proposed creating a tool that could help people easily find clients, students, and opportunities.
               </p>
-              <p className="!whitespace-pre-line">
-
-
-
+              <p>
+                Jihan expanded the idea, and within two weeks, they developed the first version of an AI system that did exactly that. Soon after, they shared the concept with Kemai Price, who encouraged them to build a full company around it. With his guidance and roadmap, the vision grew into Atlas Infrastructure Group, with Hiremind becoming its first product.
               </p>
-              <p className="!whitespace-pre-line">
-
-
-
+              <p>
+                Today, Hiremind empowers users to instantly find leads, access data, and connect with clients through email and messaging—helping professionals secure the projects and opportunities they deserve.
               </p>
               <p className="font-semibold text-foreground">
                 Our mission is simple: empower every professional with an AI agent that works 24/7 to advance their career, so they 
