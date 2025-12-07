@@ -102,10 +102,10 @@ export default function AboutUs() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-center">Our Story</h2>
             <div className="space-y-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
-              <p>
-                HireMind was born in 2023 from a simple observation: job searching is broken. Our founders, Sarah and Michael, 
-                watched countless talented professionals spend hundreds of hours manually applying to jobs, only to face rejection 
-                after rejection—not because they weren't qualified, but because their applications never reached the right people.
+              <p className="!whitespace-pre-line">One day, sitting on the table, Founder 
+
+
+
               </p>
               <p>
                 We envisioned a world where AI doesn't replace human potential but amplifies it. Where technology works tirelessly 
