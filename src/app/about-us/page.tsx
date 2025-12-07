@@ -110,10 +110,10 @@ export default function AboutUs() {
 
 
               </p>
-              <p>
-                We envisioned a world where AI doesn't replace human potential but amplifies it. Where technology works tirelessly 
-                on your behalf, finding opportunities you'd never discover, crafting personalized applications that stand out, and 
-                following up with hiring managers so you can focus on what matters: preparing for interviews and landing your dream job.
+              <p className="!whitespace-pre-line">
+
+
+
               </p>
               <p className="!whitespace-pre-line">
 
