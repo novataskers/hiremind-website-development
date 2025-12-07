@@ -35,28 +35,28 @@ export default function Home() {
             Hiremind will find and apply to jobs that match your profile—all on autopilot.
           </p>
 
-          {!isPending && (
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4">
+          {!isPending &&
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4">
               <Button
-                size="lg"
-                onClick={handleGetStarted}
-                className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 h-auto"
-              >
+              size="lg"
+              onClick={handleGetStarted}
+              className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 h-auto">
+
                 Get started
               </Button>
-              {!session?.user && (
-                <Link href="/login" className="w-full sm:w-auto">
+              {!session?.user &&
+            <Link href="/login" className="w-full sm:w-auto">
                   <Button
-                    size="lg"
-                    variant="outline"
-                    className="w-full text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 h-auto"
-                  >
+                size="lg"
+                variant="outline"
+                className="w-full text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 h-auto">
+
                     Sign in
                   </Button>
                 </Link>
-              )}
+            }
             </div>
-          )}
+          }
         </section>
 
         {/* Features Grid */}
@@ -123,11 +123,11 @@ export default function Home() {
                 <h4 className="text-xs sm:text-sm font-medium text-muted-foreground">Powered by</h4>
               </div>
               <div className="text-3xl sm:text-4xl font-bold">AIG</div>
-              <div className="text-xs sm:text-sm text-muted-foreground mt-1">Advanced AI</div>
+              <div className="text-xs sm:text-sm text-muted-foreground mt-1 !whitespace-pre-line">Atlas Infrastructure Group</div>
             </div>
           </div>
         </section>
       </main>
-    </div>
-  );
+    </div>);
+
 }
