@@ -122,7 +122,7 @@ export default function Home() {
                 <Brain className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                 <h4 className="text-xs sm:text-sm font-medium text-muted-foreground">Powered by</h4>
               </div>
-              <div className="text-3xl sm:text-4xl font-bold">GPT-4</div>
+              <div className="text-3xl sm:text-4xl font-bold">AIG</div>
               <div className="text-xs sm:text-sm text-muted-foreground mt-1">Advanced AI</div>
             </div>
           </div>

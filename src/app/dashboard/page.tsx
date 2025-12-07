@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { MessageSquare, FileText, BarChart3, Settings, Users, Briefcase, Info } from "lucide-react";
+import { MessageSquare, FileText, BarChart3, BookOpen, Users, Briefcase, Info } from "lucide-react";
 import { useSession } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 import Header from "@/components/Header";
@@ -100,16 +100,16 @@ export default function Dashboard() {
               </Badge>
             </Card>
 
-            {/* Settings - Coming Soon */}
+            {/* Hiremind Study - Coming Soon */}
             <Card className="p-6 sm:p-8 lg:p-10 relative opacity-75">
               <div className="mb-4 sm:mb-6">
-                <Settings className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 text-muted-foreground" />
+                <BookOpen className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 text-muted-foreground" />
               </div>
               <h3 className="text-xl sm:text-2xl font-semibold mb-2 sm:mb-3 text-muted-foreground">
-                Settings
+                Hiremind Study
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                Manage your profile, preferences, and account settings
+                Access resources and guides to improve your job search
               </p>
               <Badge 
                 variant="secondary" 
@@ -159,7 +159,7 @@ export default function Dashboard() {
 
             {/* About Us - Active */}
             <Card 
-              className="p-6 sm:p-8 lg:p-10 relative hover:border-primary/50 transition-all cursor-pointer group"
+              className="p-6 sm:p-8 lg:p-10 hover:border-primary/50 transition-all cursor-pointer group"
               onClick={() => router.push("/about-us")}
             >
               <div className="mb-4 sm:mb-6">
@@ -171,12 +171,6 @@ export default function Dashboard() {
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 Learn more about HireMind and our mission
               </p>
-              <Badge 
-                variant="secondary" 
-                className="absolute top-4 sm:top-6 right-4 sm:right-6 text-xs"
-              >
-                Coming soon
-              </Badge>
             </Card>
           </div>
         </div>
