@@ -20,7 +20,7 @@ const teamMembers = [
 },
 {
   name: "Jihan Ahmed",
-  role: "Co-Founder & Head",
+  role: "Co-Founder & Head Developer",
   image: "MC",
   bio: "Ex-Google AI Engineer. Built machine learning systems for Fortune 500 companies. Believes in ethical AI for career advancement.",
   linkedin: "#",
@@ -130,7 +130,7 @@ export default function AboutUs() {
                       {member.image}
                     </div>
                     <h3 className="text-xl font-semibold mb-1 !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">{member.name}</h3>
-                    <p className="text-sm text-primary font-medium mb-3 !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">{member.role}</p>
+                    <p className="text-sm text-primary font-medium mb-3 !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">{member.role}</p>
                     <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                       {member.bio}
                     </p>
