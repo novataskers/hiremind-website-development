@@ -13,7 +13,7 @@ const teamMembers = [
 {
   name: "Faiz Nour El Houda",
   role: "Founder",
-  image: "SJ",
+  image: "N",
   bio: "Former VP at LinkedIn with 15+ years in recruitment tech. Passionate about leveraging AI to democratize job opportunities.",
   linkedin: "#",
   twitter: "#"
@@ -21,7 +21,7 @@ const teamMembers = [
 {
   name: "Jihan Ahmed",
   role: "Co-Founder & Head Developer",
-  image: "MC",
+  image: "J",
   bio: "Ex-Google AI Engineer. Built machine learning systems for Fortune 500 companies. Believes in ethical AI for career advancement.",
   linkedin: "#",
   twitter: "#"
@@ -29,7 +29,7 @@ const teamMembers = [
 {
   name: "Kemai Price",
   role: "Co-Founder & Advisor",
-  image: "ER",
+  image: "K",
   bio: "Product leader from Meta. Expert in user experience design. Dedicated to creating intuitive tools that empower job seekers.",
   linkedin: "#",
   twitter: "#"
@@ -44,8 +44,8 @@ const teamMembers = [
 },
 {
   name: "Hena Ahmed",
-  role: "VP of Customer Success",
-  image: "AF",
+  role: "Content Curation Manager",
+  image: "H",
   bio: "Career coach with 10+ years helping thousands land dream jobs. Committed to ensuring every user finds their perfect match.",
   linkedin: "#",
   twitter: "#"
@@ -126,11 +126,11 @@ export default function AboutUs() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {teamMembers.map((member, index) => <Card key={index} className="p-6 hover:border-primary/50 transition-all">
                   <div className="flex flex-col items-center text-center">
-                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white text-2xl font-bold mb-4">
+                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white text-2xl font-bold mb-4 !whitespace-pre-line !whitespace-pre-line">
                       {member.image}
                     </div>
                     <h3 className="text-xl font-semibold mb-1 !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">{member.name}</h3>
-                    <p className="text-sm text-primary font-medium mb-3 !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">{member.role}</p>
+                    <p className="text-sm text-primary font-medium mb-3 !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">{member.role}</p>
                     <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                       {member.bio}
                     </p>
