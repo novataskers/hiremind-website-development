@@ -102,7 +102,7 @@ export default function AboutUs() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-center">Our Story</h2>
             <div className="space-y-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
-              <p className="!whitespace-pre-line">One day, sitting on the table, Founder 
+              <p className="!whitespace-pre-line !whitespace-pre-line">One day, during mid 2025, sitting on the table, Founder Faiz Nour El Houda was thinking how to get clients for her online business and get her students to connect with her, find her and how she can find them for teaching. A person with same mindset was also sitting far away from her in a very seperate world struggling to find video editing clients so that he can survive. Both of them were very good friends. They used to share everything with each other and just like that, they discussed there problems and Nour came to an idea of why not we make something that helps us find cline
 
 
 
