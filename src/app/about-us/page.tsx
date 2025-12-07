@@ -44,15 +44,15 @@ const teamMembers = [
 },
 {
   name: "Hena Ahmed",
-  role: "Content Curation Manager",
+  role: "VP of Customer Success",
   image: "AF",
   bio: "Career coach with 10+ years helping thousands land dream jobs. Committed to ensuring every user finds their perfect match.",
   linkedin: "#",
   twitter: "#"
 },
 {
-  name: "Aziz Silani",
-  role: "Head of Engineering",
+  name: "James Martinez",
+  role: "Web Tester",
   image: "JM",
   bio: "Full-stack architect from Amazon. Built scalable systems serving millions. Focused on reliable, fast, and secure technology.",
   linkedin: "#",
@@ -129,7 +129,7 @@ export default function AboutUs() {
                     <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white text-2xl font-bold mb-4">
                       {member.image}
                     </div>
-                    <h3 className="text-xl font-semibold mb-1 !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">{member.name}</h3>
+                    <h3 className="text-xl font-semibold mb-1 !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">{member.name}</h3>
                     <p className="text-sm text-primary font-medium mb-3 !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">{member.role}</p>
                     <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                       {member.bio}
