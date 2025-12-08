@@ -144,17 +144,6 @@ export default function AboutUs() {
                   }
                     <h3 className="text-xl font-semibold mb-1 !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">{member.name}</h3>
                     <p className="text-sm text-primary font-medium mb-3 !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">{member.role}</p>
-                    <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                      {member.bio}
-                    </p>
-                    <div className="flex gap-3">
-                      <a href={member.linkedin} className="text-muted-foreground hover:text-primary transition-colors">
-                        <Linkedin className="w-5 h-5" />
-                      </a>
-                      <a href={member.twitter} className="text-muted-foreground hover:text-primary transition-colors">
-                        <Twitter className="w-5 h-5" />
-                      </a>
-                    </div>
                   </div>
                 </Card>)}
             </div>
