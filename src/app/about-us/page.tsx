@@ -38,7 +38,7 @@ const teamMembers = [
 {
   name: "Raiyan Hussain",
   role: "Social Media Manager",
-  image: "R",
+  image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Screenshot_8-12-2025_2301_www.instagram.com-1765190381359.jpeg",
   bio: "PhD in Computer Science from MIT. Published researcher in NLP and job matching algorithms. Pioneering the future of AI recruitment.",
   linkedin: "#",
   twitter: "#"
