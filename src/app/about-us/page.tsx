@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Linkedin, Twitter, Instagram, Facebook, Youtube } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import Image from "next/image";
 
 const teamMembers = [
 {
@@ -53,7 +54,7 @@ const teamMembers = [
 {
   name: "James Martinez",
   role: "Web Tester",
-  image: "",
+  image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Screenshot_8-12-2025_2280_www.instagram.com-1765190250954.jpeg",
   bio: "Full-stack architect from Amazon. Built scalable systems serving millions. Focused on reliable, fast, and secure technology.",
   linkedin: "#",
   twitter: "#"
@@ -126,11 +127,23 @@ export default function AboutUs() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {teamMembers.map((member, index) => <Card key={index} className="p-6 hover:border-primary/50 transition-all">
                   <div className="flex flex-col items-center text-center">
-                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white text-2xl font-bold mb-4 !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">
-                      {member.image}
-                    </div>
+                    {member.image.startsWith('http') ? (
+                      <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
+                        <Image
+                          src={member.image}
+                          alt={member.name}
+                          width={96}
+                          height={96}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    ) : (
+                      <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white text-2xl font-bold mb-4">
+                        {member.image}
+                      </div>
+                    )}
                     <h3 className="text-xl font-semibold mb-1 !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">{member.name}</h3>
-                    <p className="text-sm text-primary font-medium mb-3 !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">{member.role}</p>
+                    <p className="text-sm text-primary font-medium mb-3 !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">{member.role}</p>
                     <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                       {member.bio}
                     </p>
