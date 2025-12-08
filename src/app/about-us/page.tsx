@@ -22,7 +22,7 @@ const teamMembers = [
 {
   name: "Jihan Ahmed",
   role: "Co-Founder & Head Developer",
-  image: "J",
+  image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Screenshot_8-12-2025_2280_www.instagram.com-1765190250954.jpeg",
   bio: "Ex-Google AI Engineer. Built machine learning systems for Fortune 500 companies. Believes in ethical AI for career advancement.",
   linkedin: "#",
   twitter: "#"
@@ -54,7 +54,7 @@ const teamMembers = [
 {
   name: "James Martinez",
   role: "Web Tester",
-  image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Screenshot_8-12-2025_2280_www.instagram.com-1765190250954.jpeg",
+  image: "J",
   bio: "Full-stack architect from Amazon. Built scalable systems serving millions. Focused on reliable, fast, and secure technology.",
   linkedin: "#",
   twitter: "#"
