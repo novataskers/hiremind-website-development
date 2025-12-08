@@ -148,26 +148,11 @@ export default function HiremindPage() {
       </header>
 
       {/* Main Chat Interface */}
-      <main className="pt-16 h-screen flex flex-col">
-        <div className="flex-1 overflow-hidden p-4 sm:p-6 lg:p-8">
+      <main className="pt-16 min-h-screen flex flex-col">
+        <div className="flex-1 p-4 sm:p-6 lg:p-8">
           <div className="max-w-5xl mx-auto h-full flex flex-col">
             {/* Modern Glossy Chat Card */}
-            <Card className="flex-1 flex flex-col overflow-hidden border-border/50 bg-card/50 backdrop-blur-xl supports-[backdrop-filter]:bg-card/30 shadow-2xl">
-              {/* Chat Header */}
-              <div className="border-b border-border/50 bg-gradient-to-r from-primary/10 via-primary/5 to-transparent p-4 sm:p-6">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br from-primary via-primary to-accent shadow-lg flex items-center justify-center flex-shrink-0">
-                    <Layers3 className="w-5 h-5 sm:w-6 sm:h-6 text-primary-foreground" />
-                  </div>
-                  <div className="min-w-0">
-                    <h1 className="text-lg sm:text-xl font-bold truncate">🎯 Hiremind AI</h1>
-                    <p className="text-xs sm:text-sm text-muted-foreground truncate">
-                      Your AI Job Assistant
-                    </p>
-                  </div>
-                </div>
-              </div>
-
+            <Card className="flex-1 flex flex-col border-border/50 bg-card/50 backdrop-blur-xl supports-[backdrop-filter]:bg-card/30 shadow-2xl">
               {/* Messages Area */}
               <ScrollArea className="flex-1 p-4 sm:p-6" ref={scrollAreaRef}>
                 <div className="space-y-6">
