@@ -233,11 +233,6 @@ export default function HiremindPage() {
                     )}
                   </Button>
                 </form>
-                
-                {/* Powered by AIG */}
-                <div className="text-center mt-4">
-                  <p className="text-xs text-muted-foreground">Powered by AIG</p>
-                </div>
               </div>
             </Card>
           </div>
