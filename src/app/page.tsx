@@ -104,7 +104,7 @@ export default function Home() {
                 <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                 <h4 className="text-xs sm:text-sm font-medium text-muted-foreground">Automates</h4>
               </div>
-              <div className="text-3xl sm:text-4xl font-bold">87%</div>
+              <div className="text-3xl sm:text-4xl font-bold !whitespace-pre-line">97%</div>
               <div className="text-xs sm:text-sm text-muted-foreground mt-1">of your job search</div>
             </div>
 
