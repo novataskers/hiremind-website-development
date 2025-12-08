@@ -148,11 +148,11 @@ export default function HiremindPage() {
       </header>
 
       {/* Main Chat Interface */}
-      <main className="pt-16 min-h-screen flex flex-col">
-        <div className="flex-1 p-4 sm:p-6 lg:p-8">
+      <main className="pt-16 h-screen flex flex-col">
+        <div className="flex-1 p-4 sm:p-6 lg:p-8 overflow-hidden">
           <div className="max-w-5xl mx-auto h-full flex flex-col">
             {/* Modern Glossy Chat Card */}
-            <Card className="flex-1 flex flex-col border-border/50 bg-card/50 backdrop-blur-xl supports-[backdrop-filter]:bg-card/30 shadow-2xl">
+            <Card className="h-full flex flex-col border-border/50 bg-card/50 backdrop-blur-xl supports-[backdrop-filter]:bg-card/30 shadow-2xl">
               {/* Messages Area */}
               <ScrollArea className="flex-1 p-4 sm:p-6" ref={scrollAreaRef}>
                 <div className="space-y-6">
