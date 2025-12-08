@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Linkedin, Twitter, Github } from "lucide-react";
+import { Linkedin, Twitter, Instagram, Facebook, Youtube } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -154,69 +154,30 @@ export default function AboutUs() {
             <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">Get In Touch</h2>
             
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
-              {/* Contact Info */}
-              <div>
-                <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <Mail className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium">Email</p>
-                      <a href="mailto:support@hiremind.ai" className="text-muted-foreground hover:text-primary transition-colors">
-                        support@hiremind.ai
-                      </a>
-                      <p className="text-sm text-muted-foreground mt-1">For general inquiries and support</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-3">
-                    <Mail className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium">Sales</p>
-                      <a href="mailto:sales@hiremind.ai" className="text-muted-foreground hover:text-primary transition-colors">
-                        sales@hiremind.ai
-                      </a>
-                      <p className="text-sm text-muted-foreground mt-1">For enterprise and partnership inquiries</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <Phone className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium">Phone</p>
-                      <a href="tel:+18005551234" className="text-muted-foreground hover:text-primary transition-colors">
-                        +1 (800) 555-1234
-                      </a>
-                      <p className="text-sm text-muted-foreground mt-1">Mon-Fri, 9am-6pm EST</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium">Office</p>
-                      <p className="text-muted-foreground">
-                        123 Innovation Drive<br />
-                        San Francisco, CA 94105<br />
-                        United States
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="pt-4">
-                    <p className="font-medium mb-3">Follow Us</p>
-                    <div className="flex gap-4">
-                      <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                        <Linkedin className="w-6 h-6" />
-                      </a>
-                      <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                        <Twitter className="w-6 h-6" />
-                      </a>
-                      <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                        <Github className="w-6 h-6" />
-                      </a>
-                    </div>
-                  </div>
+              {/* Follow Us Section */}
+              <div className="flex flex-col justify-center">
+                <h3 className="text-xl font-semibold mb-6">Follow Us</h3>
+                <div className="flex gap-4">
+                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Instagram className="w-6 h-6" />
+                  </a>
+                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Linkedin className="w-6 h-6" />
+                  </a>
+                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Facebook className="w-6 h-6" />
+                  </a>
+                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Youtube className="w-6 h-6" />
+                  </a>
+                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Twitter className="w-6 h-6" />
+                  </a>
+                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                    <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
 
