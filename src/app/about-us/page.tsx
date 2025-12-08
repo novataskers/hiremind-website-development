@@ -30,7 +30,7 @@ const teamMembers = [
 {
   name: "Sir Kemai Price",
   role: "Co-Founder & Advisor",
-  image: "K",
+  image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Screenshot_8-12-2025_24152_www.instagram.com-1765190584636.jpeg",
   bio: "Product leader from Meta. Expert in user experience design. Dedicated to creating intuitive tools that empower job seekers.",
   linkedin: "#",
   twitter: "#"
