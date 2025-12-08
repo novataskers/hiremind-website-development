@@ -1,3 +1,12 @@
+/* Updated: 2025-12-08T13:51:20.002Z */
+/* Updated: 2025-12-08T12:58:10.816Z */
+/* Updated: 2025-12-08T12:49:04.056Z */
+/* Updated: 2025-12-08T10:25:11.340Z */
+/* Updated: 2025-12-07T22:06:59.927Z */
+/* Updated: 2025-12-07T20:02:05.547Z */
+/* Updated: 2025-12-05T15:40:45.928Z */
+/* Updated: 2025-12-05T14:42:08.731Z */
+/* Updated: 2025-12-04T12:55:14.393Z */
 /* Updated: 2025-11-16T18:49:55.914Z */
 /* Updated: 2025-11-16T14:46:32.275Z */
 /* Updated: 2025-11-16T14:22:17.987Z */
@@ -145,6 +154,20 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  
+  /* Prevent iOS zoom on input focus */
+  input,
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+  
+  /* Lock mobile viewport */
+  html,
+  body {
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
